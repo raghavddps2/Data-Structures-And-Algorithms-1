@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AdditionArray",
+            "request": "launch",
+            "mainClass": "CodingNinjas/Lecture6.AdditionArray",
+            "projectName": "CodingNinjas"
+        }
+    ]
+}

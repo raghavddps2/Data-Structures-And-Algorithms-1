@@ -1,3 +1,4 @@
+package Lecture6;
 public class AdditionArray{
 
     public static void main(String[] args){

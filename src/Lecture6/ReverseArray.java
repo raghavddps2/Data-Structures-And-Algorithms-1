@@ -1,5 +1,4 @@
 package Lecture6;
-import java.util.Scanner;
 public class ReverseArray{
 
     public static void reverseArray(int[] arr){

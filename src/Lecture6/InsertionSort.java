@@ -1,3 +1,4 @@
+package Lecture6;
 public class InsertionSort {	
     
     	public static void insertionSort(int[] arr){

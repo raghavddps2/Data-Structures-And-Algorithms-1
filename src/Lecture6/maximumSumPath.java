@@ -1,3 +1,4 @@
+package Lecture6;
 public class maximumSumPath {
 
 	public static long maximumSumPath1(int[] input1, int[] input2) {

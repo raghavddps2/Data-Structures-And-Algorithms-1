@@ -1,3 +1,4 @@
+package Lecture6;
 import java.util.*;
 public class BinarySearch{
     public static int binarySearch(int[] arr, int num){
@@ -32,5 +33,6 @@ public class BinarySearch{
         int key = sc.nextInt();
         int index = binarySearch(arr,key);
         System.out.println("Element found at index: "+index);
+        sc.close();
     }
 }

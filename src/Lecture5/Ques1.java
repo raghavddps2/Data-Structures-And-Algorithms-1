@@ -1,4 +1,5 @@
-public class FindUnique{	
+package Lecture5;
+public class Ques1{	
 
 	public static int findUnique(int[] arr){
 

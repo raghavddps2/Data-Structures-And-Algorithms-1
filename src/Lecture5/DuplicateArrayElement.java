@@ -1,3 +1,4 @@
+package Lecture5;
 public class DuplicateArrayElement{	
 
 	public static int duplicate(int[] arr){  

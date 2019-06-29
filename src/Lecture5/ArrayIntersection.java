@@ -1,5 +1,6 @@
+package Lecture5;
 import java.util.Arrays;
-public class Intersection{
+public class ArrayIntersection{
 	
 	public static void intersection(int[] arr1, int[] arr2){
 		

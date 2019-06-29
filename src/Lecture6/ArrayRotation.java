@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package Lecture6;
 public class ArrayRotation {	
     
     

@@ -3,7 +3,7 @@ package Lecture6;
 import java.util.Arrays;
 public class CheckRotation {	
 
-    public static void rotate(int[] arr,int d){
+    public static void rotateClockwise(int[] arr,int d){
         
         //rotating in clockwise direction.
           int n = arr.length;
@@ -31,7 +31,7 @@ public class CheckRotation {
         for(int i=1;i<n;i++){
             
             //rotating
-            rotate(arr,1);
+            rotateClockwise(arr,1);
             //comparing here.
             boolean cmp = Arrays.equals(arr2,arr);
             

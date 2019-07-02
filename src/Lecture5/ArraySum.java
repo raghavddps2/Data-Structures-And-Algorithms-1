@@ -1,3 +1,4 @@
+package Lecture5;
 import java.util.Scanner;
 public class ArraySum {
 		public static void main(String[] args) {

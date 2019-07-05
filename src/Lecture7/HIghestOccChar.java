@@ -1,6 +1,7 @@
+package Lecture7;
 import java.util.Arrays;
 // highest occurring character in the String.
-public class solution {
+public class HIghestOccChar {
 
 	public static char highestOccuringCharacter(String inputString) {
 		// //Write your code here
@@ -21,7 +22,7 @@ public class solution {
 		    }
 		return (char)val;
         
-        This doesn't handle the case when the frequency of two characters is same. So, a wrong approach 
+       // This doesn't handle the case when the frequency of two characters is same. So, a wrong approach 
         
         
         

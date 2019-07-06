@@ -5,6 +5,7 @@ package Lecture9;
  */
 public class removeDup {
 
+    //Pass substrings always in strings.
     public static String  removeFunc(String str,int i) {
         
         if(i == str.length()-1){

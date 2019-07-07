@@ -6,7 +6,7 @@ package Lecture9;
 public class staircase {
 
     public static int staircase(int n) {
-        return -1;
+        
     }
     public static void main(String[] args) {
         

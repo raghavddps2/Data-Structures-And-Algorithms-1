@@ -1,31 +1,36 @@
 package Lecture9;
-
+import java.util.*;
 /**
  * printSubSequences
  */
 public class printSubSequences {
-    static int i =1;
-    public static void printSubSequences(String input,int start,int end){
-        
-        if(start == end){
-            // if(i == 1){
-            //     System.out.println(" ");
-            //     i += 1;
-            // }
-            return;
+
+    public static String[] subSequence(String input){
+
+        if(input.length() == 0){
+            String out[] = new String[1];
+            out[0] = "";
+            return out;
         }
-        else{
-            System.out.println(input.substring(start,end));
-            printSubSequences(input,start+1,end);
-            printSubSequences(input,start,end-1);   
+
+        String append  = input.substring(0, 1);
+        String[] out = subSequence(input.substring(1));
+        String[] ans = new String[out.length*2];
+        for(int i=0;i<out.length;i++){
+            ans[i] = out[i];
         }
+        for(int i=out.length;i<ans.length;i++){
+            ans[i] = append + ans[i-out.length];
+        }
+        return ans;
     }
-	public static void printSubsequences(String input) {
-		printSubSequences(input,0,input.length());
-	}
     public static void main(String[] args) {
         
         String str = "abc";
-        printSubsequences(str);
+        String subSeq[] = new String[(int)Math.pow(2,str.length())];
+        subSeq = subSequence(str);
+        for(int i=0;i<subSeq.length;i++){
+            System.out.println(subSeq[i]);
+        }
     }
 }

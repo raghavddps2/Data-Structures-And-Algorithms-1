@@ -4,26 +4,31 @@ package Lecture9;
  * stringPermutations
  */
 public class stringPermutations {
-    
-    static String arr[] = new String[1000];
-    public static String[] myPermutFunc(String str,int i,int j) {
-        
-      return arr;
-    }
 
-    public static String[] permutationsOfStrings(String str) {
+    public static String swap(String input,int i,int j){
         
-        int i=0;
-        int j=0;
-        String str2[] = myPermutFunc(str,i,j);
-        return str2;
+        char arr[] = input.toCharArray();
+            char temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            String str = new String(arr);
+        return str;
+    }
+    public static void myPermuteFunc(String input,int i,int j){
+        
+        if(i == j){
+            System.out.println(input);
+        }
+        else{
+            for(int p = i;p<=j;p++){
+                String str = swap(input,i,p);
+                myPermuteFunc(str,i+1,j);
+                str = swap(input,i,p);
+            }
+        }
     }
     public static void main(String[] args) {
-        
-        String str = "";
-        String strPermut[] = permutationsOfStrings(str);
-        for(int i=0;i<strPermut.length;i++){
-            System.out.println(strPermut[i]);
-        }
+        String str = "abc";
+        myPermuteFunc(str,0,str.length()-1);   
     }
 }

@@ -67,13 +67,22 @@ package Lecture11;
     int arr[] = new int[0];
 	public void setCoefficient(int degree, int coeff){
         if(arr.length <= degree){
-            int newArr[] = new int[arr.length];
-            newArr = arr.clone();
-            arr = new int[degree+1];
-            for(int i=0;i<newArr.length;i++){
-                arr[i] = newArr[i];
+             
+            //The simple thing is to make the newArray with length of degree+1 and then putting
+            //the array contents in it and then assigning newArr reference to arr.
+    
+            
+            // int newArr[] = new int[arr.length];
+            // newArr = arr.clone();
+            // arr = new int[degree+1];
+            // for(int i=0;i<newArr.length;i++){
+            //     arr[i] = newArr[i];
+            // }
+            int newArr[] = new int[degree+1];
+            for(int i=0;i<arr.length;i++){
+                newArr[i] = arr[i];
             }
-                
+            arr = newArr;
         }
         arr[degree] = coeff;
 	}

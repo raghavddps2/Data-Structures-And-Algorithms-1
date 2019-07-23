@@ -1,9 +1,9 @@
  package Lecture12;
-class LinkedListNode<T> {
+class LinkedList<T> {
 	T data;
-	LinkedListNode<T> next;
+	LinkedList<T> next;
 
-	public LinkedListNode(T data) {
+	public LinkedList(T data) {
 		this.data = data;
 	}
 }
@@ -11,7 +11,7 @@ class LinkedListNode<T> {
 
 public class  merge2LL{
 
-	public static LinkedListNode<Integer> mergeTwoList(LinkedListNode<Integer> head1, LinkedListNode<Integer> head2) {
+	public static LinkedList<Integer> mergeTwoList(LinkedList<Integer> head1, LinkedList<Integer> head2) {
 		/* Your class should be named Solution
 		 * Don't write main().
 		 * Don't read input, it is passed as function argument.
@@ -20,8 +20,8 @@ public class  merge2LL{
 		*/
 		
         //SImply, merge the two lists.
-        LinkedListNode dummyNode = new LinkedListNode(0);
-        LinkedListNode finalList = dummyNode;
+        LinkedList dummyNode = new LinkedList(0);
+        LinkedList finalList = dummyNode;
         
         while(true){
             if(head1 == null){

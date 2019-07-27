@@ -14,7 +14,7 @@ public class Car extends Vehicle {
         this.sideCar = sideCar;
         this.color = color;
     }
-    void print_info(){
+    protected void print_info(){
     //    System.out.println("Car class");
         super.print_info();
         System.out.println("Side car: "+sideCar);

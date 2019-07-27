@@ -11,7 +11,6 @@ public class truck extends Vehicle{
             this.wheels = wheels;
         }
         void print_fun(){
-            System.out.println(this.airbags);
+            System.out.println(this.wheels);
         }
 }   
-

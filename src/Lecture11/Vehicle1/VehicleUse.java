@@ -16,11 +16,11 @@ public class VehicleUse {
 
 
         //This is freakin important. Have a look at it very very nicely.
-        Car c2 = new Car("Sakaram",true,"blue");
+        Car c2 = new Car("Sakaram",true,"blue",true);
         c2.setGears(4);
         c2.print_info();
 
-        Vehicle v1 = new Vehicle("black");
+        Vehicle v1 = new Vehicle("black",true);
         v1.setGears(6);
         v1.print_info();
     }

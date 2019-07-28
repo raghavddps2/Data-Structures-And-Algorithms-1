@@ -2,6 +2,12 @@ package Lecture13;
 
 /**
  * Queue
+ * The modulus code for enqueue and dequeue functions are super simple.
+ * we just go to nestIndex+1%data.length  in enqueue
+ * we just go to frontIndex+1%data.length in dequeue
+ * And this just helps us to keep track of ALL edge case scenarioes too.
+ * 
+ * DO IMPLEMENT THIS APPROACH!
  */
 public class Queue {
 
@@ -33,6 +39,22 @@ public class Queue {
             nextIndex++;
         }
         System.out.println("Enqueued successfully");
+
+        /*
+            *Mam's super simple code
+            if(length == data.length){
+                //full
+                //return
+            }
+            data[nextIndex] = val ; here nextIndex = 0
+            if(front == -1){
+                //first element
+                frontIndex =0
+            }
+            nextIndex = (nextIndex+1)%data.length;
+
+        */
+        
     }
 
     public void print(){
@@ -87,7 +109,13 @@ public class Queue {
         }
         System.out.println("Dequeued successfully");
         return k;
-    }
+
+        /*
+            Mam's super simple logic
+            int k = data[frontIndex];
+            firstIndex = (firstIndex+1)%data.length;
+        */
+        }
     public int front(){
         if(frontIndex == -1){
             System.out.println("The queue is empty");

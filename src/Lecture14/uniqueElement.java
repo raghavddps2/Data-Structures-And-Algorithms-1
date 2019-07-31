@@ -3,6 +3,7 @@ package Lecture14;
 /**
  * uniqueElement
  */
+import java.util.*;
 public class uniqueElement {
     public static int findUnique(int[] arr){
 		/* Your class should be named FindUnique

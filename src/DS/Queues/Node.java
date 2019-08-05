@@ -1,4 +1,4 @@
-package DS;
+package DS.Queues;
 class Node<T>{
     T data;
     Node<T> next;

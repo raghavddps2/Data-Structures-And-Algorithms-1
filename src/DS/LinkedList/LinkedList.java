@@ -1,6 +1,6 @@
 
-package DS;
-import DS.Node;
+package DS.LinkedList;
+import DS.LinkedList.Node;
 
 class LinkedList<T> {
 
